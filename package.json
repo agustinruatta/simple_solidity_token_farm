@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/agustinruatta/simple_solidity_token_farm/issues"
   },
-  "homepage": "https://github.com/agustinruatta/simple_solidity_token_farm#readme"
+  "homepage": "https://github.com/agustinruatta/simple_solidity_token_farm#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.11.2"
+  }
 }
