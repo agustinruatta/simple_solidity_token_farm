@@ -1,0 +1,23 @@
+{
+  "name": "simple_solidity_token_farm",
+  "version": "1.0.0",
+  "description": "Simple Token Farm - Made using Solidity and HardHat",
+  "scripts": {
+    "test": "npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agustinruatta/simple_solidity_token_farm.git"
+  },
+  "keywords": [
+    "solidity",
+    "token",
+    "farming"
+  ],
+  "author": "Agustín Ruatta <agustinruatta@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/agustinruatta/simple_solidity_token_farm/issues"
+  },
+  "homepage": "https://github.com/agustinruatta/simple_solidity_token_farm#readme"
+}
