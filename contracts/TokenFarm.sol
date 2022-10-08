@@ -1,14 +1,15 @@
 // SPDX-License-Identifier: GPL v3
 pragma solidity ^0.8.0;
 
-contract TokenFarm {
-    // State variables
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "./DappToken.sol";
+import "./LPToken.sol";
 
-    string public name = "Simple Token Farm";
+contract TokenFarm is Ownable {
+    string public constant name = "Simple Token Farm";
 
-    address public owner;   
-    DappToken public dappToken; //mock platform reward token
-    LPToken public lpToken; // mock LP Token staked by users
+    DappToken public dappToken;
+    LPToken public lpToken;
 
     // rewards per block
     uint256 public constant REWARD_PER_BLOCK = 1e18;
@@ -55,7 +56,7 @@ contract TokenFarm {
         // checkpoint block number
 
         // calculate rewards
-        distributeRewards();
+        // distributeRewards();
 
         // emit some event
     }
@@ -68,12 +69,12 @@ contract TokenFarm {
         // check is sender is staking
 
         // Fetch staking balance
-        uint256 balance =;
+        // uint256 balance =;
 
         // Require amount greater than 0
 
         // calculate rewards before reseting staking balance
-        distributeRewards();
+        // distributeRewards();
 
         // Reset staking balance
 
@@ -124,11 +125,11 @@ contract TokenFarm {
         // get las checkpoint block
 
         // calculates rewards:
-        if (block.number > checkpoint) {
+        // if (block.number > checkpoint) {
             // reward = 
             // updates pendig rewards and block number checkpoint
             // ...
-        }
+        // }
     }
 }
 
